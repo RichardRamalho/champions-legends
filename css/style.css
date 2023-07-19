@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --font-f: "Mulish", sans-serif;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: url("https://assets-us-01.kc-usercontent.com/31dbcbc6-da4c-0033-328a-d7621d0fa726/5b1cca65-314d-441d-8577-5ec9da43627e/Apple%20TV%20-%20UEFA%20Champions%20League.png?w=3840&q=75");
+  background-size: cover;
+  font-family: var(--font-f);
+  color: #f0ffff;
+  padding: 1.6rem auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.champs {
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #47f4ff;
+}
+
+.champions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  min-height: calc(100vh - 150px);
+  justify-content: center;
+}
+
+.player-select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  max-width: 58.5rem;
+}
+
+.player {
+  font-size: 1.8rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  list-style: none;
+  margin-top: 1.2rem;
+}
+
+.list img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 1rem;
+  border-bottom: 4px solid #47f4ff;
+}
+
+
+.jogador.selecionado {
+  box-shadow: 0px 0px 24px 5px #c0dcff;
+  border-radius: 1rem;
+}
+
+.selection {
+    text-align: center;
+    max-height: 53rem;
+}
+
+.personagem-grande {
+  width: 43;
+  height: 43;
+  
+}
+
+.name-character {
+  border-bottom: 2px solid #47f4ff;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.text-character {
+  font-size: 1.9rem;
+  line-height: 2.2rem;
+  text-align: center;
+  margin-top: 2rem;
+  width: 42rem;
+  font-weight: 400;
+  color: rgb(235, 235, 235);
+}
+
+@media (max-width: 1120px) {
+  .header {
+      max-width: 19rem;
+      margin-top: 2rem;
+      justify-content: center;
+  }
+
+  .champions {
+      flex-direction: column-reverse;
+      margin: 0 auto;
+      max-width: 43rem;
+  }
+
+  .player-select {
+      margin-top: 3.7rem;
+      margin-bottom: 2rem;
+  }
+
+  .list {
+      gap: 1rem;
+  }
+
+  .personagem-grande {
+      width: auto;
+      height: auto;
+  }
+}

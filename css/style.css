@@ -85,21 +85,19 @@ h1 {
   border-bottom: 4px solid #47f4ff;
 }
 
-
 .jogador.selecionado {
   box-shadow: 0px 0px 24px 5px #c0dcff;
   border-radius: 1rem;
 }
 
 .selection {
-    text-align: center;
-    max-height: 53rem;
+  text-align: center;
+  max-height: 53rem;
 }
 
 .personagem-grande {
   width: 43;
   height: 43;
-  
 }
 
 .name-character {
@@ -123,29 +121,37 @@ h1 {
 }
 
 @media (max-width: 1120px) {
-  .header {
-      max-width: 19rem;
-      margin-top: 2rem;
-      justify-content: center;
+  body {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem auto;
+  }
+
+  h1 {
+    font-size: 2.5rem;
   }
 
   .champions {
-      flex-direction: column-reverse;
-      margin: 0 auto;
-      max-width: 43rem;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    max-width: 43rem;
   }
 
   .player-select {
-      margin-top: 3.7rem;
-      margin-bottom: 2rem;
+    margin-top: 3.7rem;
+    margin-bottom: 2rem;
+  }
+
+  .player {
+    margin-top: 3rem;
   }
 
   .list {
-      gap: 1rem;
+    gap: 1rem;
   }
 
   .personagem-grande {
-      width: auto;
-      height: auto;
+    width: auto;
+    height: auto;
   }
 }
